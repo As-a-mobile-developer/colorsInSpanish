@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/learn_colors_in_spanish"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_below="@id/textID"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        >
+
+        <Button
+            android:id="@+id/redBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foreground="@drawable/red"
+            android:background="none"
+            android:tag="red"
+            android:onClick="SayColor"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/greenBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foreground="@drawable/green"
+            android:background="none"
+            android:tag="green"
+            android:onClick="SayColor"
+            android:layout_marginEnd="20dp"
+            />
+
+        <Button
+            android:id="@+id/purpleBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foreground="@drawable/purple"
+            android:background="none"
+            android:tag="purple"
+            android:onClick="SayColor"
+            />
+
+        <Button
+            android:id="@+id/orangeBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foreground="@drawable/orange"
+            android:background="none"
+            android:tag="orange"
+            android:onClick="SayColor"
+            android:layout_marginStart="20dp"
+            />
+
+        <Button
+            android:id="@+id/blueBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foreground="@drawable/blue"
+            android:background="none"
+            android:tag="blue"
+            android:onClick="SayColor"
+            />
+
+        <Button
+            android:id="@+id/yellowBtn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:foreground="@drawable/yellow"
+            android:background="none"
+            android:tag="yellow"
+            android:onClick="SayColor"
+            />
+
+    </GridLayout>
+
+
+</RelativeLayout>
